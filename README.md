@@ -30,7 +30,7 @@ The main objective of this project is to provide a way to help Non-Governmental 
 
 ## Installing
 
-All you need to do is run `npm i` at the root of the project in order to install the dependencies.
+All you need to do is run `npm i` at the root of in each folder in order to install the dependencies.
 - backend -
     Run the migrations in order to initialize the database
   ```
