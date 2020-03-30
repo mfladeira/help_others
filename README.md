@@ -22,6 +22,8 @@ The main objective of this project is to provide a way to help Non-Governmental 
 
 - [React.js](https://reactjs.org/) - JavaScript library for building user interfaces
 - [Sqlite3](https://github.com/mapbox/node-sqlite3) - Sqlite client for Node.js
+- [Knex](https://knexjs.org/) - A SQL Query Builder for Javascript
+- [Celebrate](https://www.npmjs.com/package/celebrate) - Express middleware function that wraps the [joi](https://github.com/hapijs/joi/tree/master) validation library
 - [Nodemon](https://nodemon.io/) - monitor for any changes in code and automatically restart server
 - [React Native](https://reactnative.dev/) - A framework for building native apps using React.
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client
