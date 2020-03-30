@@ -1,67 +1,45 @@
 <p align="center">
-  <img src="frontend/src/assets/logo.png" alt="chess" width="200" />
+  <img src="/frontend/src/assets/logo.svg"" width="200" />
 </p>
 
-# Be The Hero - Backend
+# Be The Hero 
 
 ## Overview
 
-The main objective of this project is to provide a way to help Non-Governmental Organisation find "Heroes" to help in their causes. This can be done by providing a [web](https://github.com/igorsouza-dev/bethehero-frontend) interface for the NGO to insert their needs and then a "Hero" can find these needs using a [mobile app](https://github.com/igorsouza-dev/bethehero-mobile) and get in touch with the organization.
+The main objective of this project is to provide a way to help Non-Governmental Organisation find Heroes to help in their causes.
 
 ## Setting up
+
 
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/download/)
 - [Npm](https://www.npmjs.com/get-npm)
-- [Yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable) - This is optional but in this readme I'll be using it on some CLI commands, you can use npm if you want.
+- [Expo](http://expo.io) - Open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+
 
 ### Dependencies
 
-These are some of the libraries that I used in this project
-
-- [Knex](https://knexjs.org/) - A SQL Query Builder for Javascript
-- [Express](https://expressjs.com/) - Node.js web application framework for API building
+- [React.js](https://reactjs.org/) - JavaScript library for building user interfaces
 - [Sqlite3](https://github.com/mapbox/node-sqlite3) - Sqlite client for Node.js
-- [Dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from a .env file
-- [Celebrate](https://www.npmjs.com/package/celebrate) - Express middleware function that wraps the [joi](https://github.com/hapijs/joi/tree/master) validation library
-
-### Dev Dependencies
-
-- [Sucrase](https://github.com/alangpierce/sucrase) - Babel alternative
 - [Nodemon](https://nodemon.io/) - monitor for any changes in code and automatically restart server
-- [Eslint](https://eslint.org) - Ecmascript linter
-- [Prettier](https://prettier.io) - Code formatter
+- [React Native](https://reactnative.dev/) - A framework for building native apps using React.
+- [Axios](https://github.com/axios/axios) - Promise based HTTP client
 - [Jest](https://jestjs.io/) - Testing framework
 - [Supertest](https://github.com/visionmedia/supertest) - Library for testing node.js HTTP servers
 
-### Routes
-
-| Routes         | Method           |
-| -------------- | ---------------- |
-| /sessions      | POST             |
-| /ongs          | GET, POST        |
-| /incidents     | GET, POST        |
-| /incidents/:id | GET, PUT, DELETE |
-
-You can import the Insomnia file located at the root of the project in your Insomnia client if you want to test the routes.
-
 ## Installing
 
-All you need to do is run `yarn` at the root of the project in order to install the dependencies.
-
-Copy the `.env.example` file and rename it to `.env`. Set the `NODE_ENV` variable inside it. This variable will be used by the Knex library to choose what database configuration will be used.
-
-Then run the migrations in order to initialize the database
-
-```sh
-yarn knex migrate:latest
-```
+All you need to do is run `npm i` at the root of the project in order to install the dependencies.
+- backend -
+    Run the migrations in order to initialize the database
+  ```
+  npx knex migrate:latest
+  ```
+- mobile -
+    Before starting, make sure to change the baseURL address at the src/services/api.js to point to your backend IP or URL
 
 ## Starting
 
-Just run `yarn dev`
+Run `npm start` in backend first then run `npm start` in frontend and/or mobile.
 
-## License
-
-This is a open-sourced software licensed under the [MIT license](LICENSE.md).
